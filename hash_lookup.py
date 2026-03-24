@@ -1,11 +1,14 @@
 import requests
 import json
 import time
+import os
 from datetime import datetime, timezone
+from dotenv import load_dotenv
+
+load_dotenv()
 
 VT_API_KEY = os.getenv("VT_API_KEY")
-MB_API_KEY = os.getenv("MB_API_KEY"
-
+MB_API_KEY = os.getenv("MB_API_KEY")
 
 def check_virustotal(file_hash):
     url = f"https://www.virustotal.com/api/v3/files/{file_hash}"
