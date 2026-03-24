@@ -1,11 +1,11 @@
+import os
 import requests
 import json
 import time
 from datetime import datetime, timezone
 
 VT_API_KEY = os.getenv("VT_API_KEY")
-MB_API_KEY = os.getenv("MB_API_KEY"
-
+MB_API_KEY = os.getenv("MB_API_KEY")
 
 def check_virustotal(file_hash):
     url = f"https://www.virustotal.com/api/v3/files/{file_hash}"
@@ -143,7 +143,8 @@ def build_final_report(file_hash):
     }
 
 
-file_hash = input("Enter SHA-256 hash: ")
-report = build_final_report(file_hash)
+if __name__ == "__main__":
+    file_hash = input("Enter SHA-256 hash: ")
+    report = build_final_report(file_hash)
 
-print(json.dumps(report, indent=2))
+    print(json.dumps(report, indent=2))
