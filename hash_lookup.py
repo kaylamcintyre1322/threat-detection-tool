@@ -1,3 +1,4 @@
+import os
 import requests
 import json
 import time
@@ -146,7 +147,8 @@ def build_final_report(file_hash):
     }
 
 
-file_hash = input("Enter SHA-256 hash: ")
-report = build_final_report(file_hash)
+if __name__ == "__main__":
+    file_hash = input("Enter SHA-256 hash: ")
+    report = build_final_report(file_hash)
 
-print(json.dumps(report, indent=2))
+    print(json.dumps(report, indent=2))
