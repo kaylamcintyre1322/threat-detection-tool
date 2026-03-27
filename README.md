@@ -35,7 +35,7 @@ nano .env
 ```env
 VT_API_KEY=enter_your_virustotal_api_key
 MB_API_KEY=enter_your_malwarebazaar_api_key
-
+```
 #### Save the file
 - Ctrl O + Enter + Ctrl X
 
