@@ -28,11 +28,10 @@ VirusTotal website: https://www.virustotal.com/
 MalwareBaazar webite: https://bazaar.abuse.ch/
 
 ### Set up API Keys
-Create a .env file:
+#### Create a .env file:
 nano .env 
 
-Add your API keys to file:
-
+#### Add your API keys to file:
 VT_API_KEY=enter_your_virustotal_api_key
 MB_API_KEY=enter_your_malwarebazaar_api_key
 
