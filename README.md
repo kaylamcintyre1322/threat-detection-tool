@@ -65,8 +65,9 @@ python3 hash_lookup.py
         "engine": "ClamAV"
         "result": "Unix.Trojan.Mirai-10017641-0"
        }
+```
  
 
-Author
+## Author
 
 Kayla McIntyre (The "Outside" Specialist)
