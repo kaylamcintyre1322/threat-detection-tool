@@ -31,8 +31,9 @@ Vist MalwareBaazar webite to generate API key: https://bazaar.abuse.ch/
 
 ### Set up API Keys
 #### Create a .env file:
+```
 nano .env 
-
+```
 #### Add your API keys to file:
 ```env
 VT_API_KEY=enter_your_virustotal_api_key
@@ -42,12 +43,14 @@ MB_API_KEY=enter_your_malwarebazaar_api_key
 - Ctrl O + Enter + Ctrl X
 
 ### Install dependencies
+```
 pip install -r requirements.txt
-
+```
 
 ### Run tool
+```
 python3 hash_lookup.py 
-
+```
 ## Example output
 ```json   
    return {
