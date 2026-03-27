@@ -31,7 +31,8 @@ MalwareBaazar webite: https://bazaar.abuse.ch/
 Create a .env file:
 nano .env 
 
-Add your API keys to file
+Add your API keys to file:
+
 VT_API_KEY=enter_your_virustotal_api_key
 MB_API_KEY=enter_your_malwarebazaar_api_key
 
