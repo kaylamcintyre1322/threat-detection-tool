@@ -1,13 +1,14 @@
 # Threat Detection Tool
 
 ## Overview
-
-This project is a Python-based threat intelligence tool that analyzes SHA-256 file hashes by cross-referencing them against VirusTotal and MalwareBaazar. It identifies malicious files and extracts key indicators of compromise such as detection scores, malware families, and detection engine results. This tool generates a structured report that supports further analysis. 
+Python-based threat intelligence tool that analyzes SHA-256 file hashes by cross-referencing them against VirusTotal and MalwareBaazar. It identifies malicious files and extracts key indicators of compromise (IOC's) such as detection scores, malware families, and antivirus engine results. This tool generates a structured report that supports further analysis. 
 
 ## Features 
 Generates a structure threat intelligence report that:
 - Retrieves detection score (e.g., 36/70)
-- Identifies the name and type of Malware
+- Identifies the name and type of Malware family (e.g., Mirai)
+- extracts decriptive tags
+- lists antivirus engines that flagged the file
 
 ## Tools and Environment 
 - Python
@@ -21,7 +22,10 @@ git clone https://github.com/kaylamcintyre13222/threat-detection-tool.git
 cd threat-detection-tool
 
 ### Retrieve API Keys from VirusTotal and MalwareBaazar
-This tool uses API keys from VirusTotal and MalwareBazaar to generate results. You must create an account with VirusTotal and MalwareBazaar and generate your own API keys. 
+This tool uses API keys from VirusTotal and MalwareBazaar to generate results. You must create an account with VirusTotal and MalwareBazaar to generate your own API keys.
+
+VirusTotal website: https://www.virustotal.com/
+MalwareBaazar webite: https://bazaar.abuse.ch/
 
 ### Set up API Keys
 Create a .env file:
