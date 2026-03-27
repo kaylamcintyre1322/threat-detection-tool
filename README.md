@@ -80,4 +80,4 @@ python3 hash_lookup.py
 
 ## Author
 
-Kayla McIntyre (The "Outside" Specialist)
+Kayla McIntyre 
