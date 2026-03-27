@@ -1,27 +1,33 @@
 # Threat Detection Tool
 
 ## Overview
+
 Python-based threat intelligence tool that analyzes SHA-256 file hashes by cross-referencing them against VirusTotal and MalwareBaazar. It identifies malicious files and extracts key indicators of compromise (IOC's) such as detection scores, malware families, and antivirus engine results. This tool generates a structured report that supports further analysis. 
 
-## Features 
+## Features
+
 Generates a structure threat intelligence report that:
 - Retrieves detection score (e.g., 36/70)
 - Identifies the name and type of Malware family (e.g., Mirai)
 - tags descriptive labels
 - lists antivirus engines that flagged the file
 
-## Tools and Environment 
+## Tools and Environment
+
 - Python
 - VirusTotal API
 - MalwareBazaar API
 - Linux
 
 ## Quick Start
+
 ### Clone the repostiory:
+
 git clone https://github.com/kaylamcintyre13222/threat-detection-tool.git
 cd threat-detection-tool
 
 ### Retrieve API Keys from VirusTotal and MalwareBaazar
+
 This tool uses API keys from VirusTotal and MalwareBazaar to generate results. You must create an account with VirusTotal and MalwareBazaar to generate your own API keys.
 
 Visit VirusTotal website to generate API key: https://www.virustotal.com/
@@ -30,30 +36,38 @@ Visit VirusTotal website to generate API key: https://www.virustotal.com/
 Vist MalwareBaazar webite to generate API key: https://bazaar.abuse.ch/
 
 ### Set up API Keys
+
 #### Create a .env file:
+
 ```
 nano .env 
 ```
+
 #### Add your API keys to file:
+
 ```env
 VT_API_KEY=enter_your_virustotal_api_key
 MB_API_KEY=enter_your_malwarebazaar_api_key
 ```
 #### Save the file
+
 - Ctrl O + Enter + Ctrl X
 
 ### Install dependencies
+
 ```
 pip install -r requirements.txt
 ```
 
 ### Run tool
+
 ```
 python3 hash_lookup.py 
 ```
 ## Example output
-```json   
-   return {
+
+```json
+      {
        "source": "VirusTotal",
        "sha256": "34eee77a6b289da54a212c7429494a62080c566f5fd7e6662b6ab0d9158f5d81"
        "detection_score": "38/70"
