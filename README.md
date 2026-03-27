@@ -6,7 +6,7 @@ Python-based threat intelligence tool that analyzes SHA-256 file hashes by cross
 
 ## Features
 
-Generates a structure threat intelligence report that:
+Generates a structured threat intelligence report that:
 - Retrieves detection score (e.g., 36/70)
 - Identifies the name and type of Malware family (e.g., Mirai)
 - tags descriptive labels
