@@ -25,6 +25,8 @@ cd threat-detection-tool
 This tool uses API keys from VirusTotal and MalwareBazaar to generate results. You must create an account with VirusTotal and MalwareBazaar to generate your own API keys.
 
 Visit VirusTotal website to generate API key: https://www.virustotal.com/
+
+
 Vist MalwareBaazar webite to generate API key: https://bazaar.abuse.ch/
 
 ### Set up API Keys
