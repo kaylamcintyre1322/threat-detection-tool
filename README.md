@@ -21,12 +21,18 @@ Generates a threat intelligence report that:
 
 ## Quick Start
 
-### Clone the repostiory:
+### 1. Clone the repostiory:
 
 git clone https://github.com/kaylamcintyre13222/threat-detection-tool.git
 cd threat-detection-tool
 
-### Retrieve API Keys from VirusTotal and MalwareBaazar
+### 2. Create a virtual environment (recommended)
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### 3. Retrieve API Keys from VirusTotal and MalwareBaazar
 
 This tool uses API keys from VirusTotal and MalwareBazaar to generate results. You must create an account with both platforms to generate your own API keys.
 
@@ -35,7 +41,7 @@ Visit VirusTotal website to generate API key: https://www.virustotal.com/
 
 Vist MalwareBaazar webite to generate API key: https://bazaar.abuse.ch/
 
-### Set up API Keys
+### 4. Set up API Keys
 
 #### Create a .env file:
 
@@ -53,13 +59,13 @@ MB_API_KEY=enter_your_malwarebazaar_api_key
 
 - Ctrl O + Enter + Ctrl X
 
-### Install dependencies
+### 5. Install dependencies
 
 ```
 pip install -r requirements.txt
 ```
 
-### Run tool
+### 6. Run tool
 
 ```
 python3 hash_lookup.py 
