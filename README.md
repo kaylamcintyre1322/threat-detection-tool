@@ -2,11 +2,11 @@
 
 ## Overview
 
-Python-based threat intelligence tool that analyzes SHA-256 file hashes by cross-referencing them against VirusTotal and MalwareBaazar. It identifies malicious files and extracts key indicators of compromise (IOC's) such as detection scores, malware families, and antivirus engine results. This tool generates a structured report that supports further analysis. 
+Python-based threat intelligence tool that analyzes SHA-256 file hashes by cross-referencing them against VirusTotal and MalwareBaazar. It identifies malicious files and extracts key indicators of compromise (IOC's) such as detection scores, malware families, and antivirus engine results. This tool generates a structured report that supports further security analysis. 
 
 ## Features
 
-Generates a structured threat intelligence report that:
+Generates a threat intelligence report that:
 - Retrieves detection score (e.g., 36/70)
 - Identifies the name and type of Malware family (e.g., Mirai)
 - tags descriptive labels
@@ -28,7 +28,7 @@ cd threat-detection-tool
 
 ### Retrieve API Keys from VirusTotal and MalwareBaazar
 
-This tool uses API keys from VirusTotal and MalwareBazaar to generate results. You must create an account with VirusTotal and MalwareBazaar to generate your own API keys.
+This tool uses API keys from VirusTotal and MalwareBazaar to generate results. You must create an account with both platforms to generate your own API keys.
 
 Visit VirusTotal website to generate API key: https://www.virustotal.com/
 
