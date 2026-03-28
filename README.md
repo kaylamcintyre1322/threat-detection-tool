@@ -12,6 +12,13 @@ Generates a threat intelligence report that:
 - tags descriptive labels
 - lists antivirus engines that flagged the file
 
+## How it works 
+
+- User inputs a SHA-256 file hash
+- The tool queries VirusTotal for detection statistics and MalwareBaazar for malware family and associated tags
+- Keys indicators of compromise (IOC's) are extracted from the results
+- A structued JSON report is genereated to support further analysis
+
 ## Tools and Environment
 
 - Python
@@ -34,14 +41,13 @@ python3 -m venv venv
 source venv/bin/activate
 ```
 
-### 3. Retrieve API Keys from VirusTotal and MalwareBaazar
+### 3. Obtain API Keys from VirusTotal and MalwareBaazar
 
 This tool uses API keys from VirusTotal and MalwareBazaar to generate results. You must create an account with both platforms to generate your own API keys.
 
-Visit VirusTotal website to generate API key: https://www.virustotal.com/
-
-
-Vist MalwareBaazar webite to generate API key: https://bazaar.abuse.ch/
+click the links below to generate your API keys:
+- VirusTotal: https://www.virustotal.com/
+- MalwareBazaar: https://bazaar.abuse.ch/
 
 ### 4. Set up API Keys
 
