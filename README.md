@@ -23,8 +23,10 @@ Generates a threat intelligence report that:
 
 ### 1. Clone the repostiory:
 
+```bash
 git clone https://github.com/kaylamcintyre13222/threat-detection-tool.git
 cd threat-detection-tool
+```
 
 ### 2. Create a virtual environment (recommended)
 ```bash
