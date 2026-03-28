@@ -9,8 +9,8 @@ Python-based threat intelligence tool that analyzes SHA-256 file hashes by cross
 Generates a threat intelligence report that:
 - Retrieves detection score (e.g., 36/70)
 - Identifies the name and type of Malware family (e.g., Mirai)
-- tags descriptive labels
-- lists antivirus engines that flagged the file
+- Tags descriptive labels
+- Lists antivirus engines that flagged the file
 
 ## How it works 
 
@@ -109,8 +109,8 @@ python3 hash_lookup.py
 
  This tool can be used to:
  - Analyze suspicious file hashes to determine if they are malicious
- - identify malware families associated with known threats
- - extract indicators of compromise (IOC's) for threat detection and monitoring
+ - Identify malware families associated with known threats
+ - Extract indicators of compromise (IOC's) for threat detection and monitoring
  - Asisist security analysts in threat investigations and incident response
 
 ## Author
