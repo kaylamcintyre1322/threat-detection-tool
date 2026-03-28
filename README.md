@@ -96,7 +96,14 @@ python3 hash_lookup.py
         "result": "Unix.Trojan.Mirai-10017641-0"
        }
 ```
- 
+
+ ## Use Case
+
+ This tool can be used to:
+ - Analyze suspicious file hashes to determine if they are malicious
+ - identify malware families associated with known threats
+ - extract indicators of compromise (IOC's) for threat detection and monitoring
+ - Asisist security analysts in threat investigations and incident response
 
 ## Author
 
