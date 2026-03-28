@@ -45,7 +45,7 @@ source venv/bin/activate
 
 This tool uses API keys from VirusTotal and MalwareBazaar to generate results. You must create an account with both platforms to generate your own API keys.
 
-click the links below to generate your API keys:
+Click the links below to generate your API keys:
 - VirusTotal: https://www.virustotal.com/
 - MalwareBazaar: https://bazaar.abuse.ch/
 
