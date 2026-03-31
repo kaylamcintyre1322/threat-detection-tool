@@ -138,6 +138,9 @@ def build_final_report(file_hash):
     return {
         "source": "VirusTotal",
         "sha256": file_hash,
+        "malicious_votes":vt.get("malicious_votes", 0),
+        "suspicious_votes":vt.get("suspicious_votes", 0),
+        "total_engines": vt.get("total_engines", 0),
         "detection_score": detection_score,
         "malware_family": malware_family,
         "tags": tags,
